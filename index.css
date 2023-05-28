@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: rgb(213, 213, 213);
+    width: 10vmax;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+}
+
+.sidebar nav{
+    padding: 40px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding: 33px 0;
+}
+
+.container{
+    display: flex;
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 90vmax;
+}
+
+.infoContainer{
+    /* background-color: pink; */
+    height: 45vh;
+    width: 80vw;
+    margin: 145px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Comfortaa', cursive;
+}
+
+.devpic img{
+    height: 45vh;
+}
+
+.hello{
+    font-size: 60px;
+}
+
+.name{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.about{
+font-size: 25px;
+
+}
