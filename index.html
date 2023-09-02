@@ -2,39 +2,233 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Sahitya Singh : Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            
+    <div id="header">
+        <div class="container">
             <nav>
-                <ul>
-                    <li>Intro</li>
-                    <li>Services</li>
-                    <li>CV</li>
-                    <li>Blog</li>
+                <img src="images/lg2.png" alt="Logo here" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i  class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i  class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
-    
-        </div>
-        <div class="main">
-           <div class="infoContainer">
-            <div class="devinfo">
-                <div class="hello">Hii I am </div>
-                <div class="name">Sahitya Singh</div>
-                <div class="hello">Full Stack Developer</div>
-                <div class="buttons">
-                    <button>Download CV</button>
-                    <button>Contact Me</button>
-                </div>
+            <div class="header-text">
+                <h3>Hello, It's Me</h3>
+                <h1>Sahitya Singh</h1>
+                <!-- <h3>And I'm a <p class="typing-demo">Full Stack Web Developer</p></h3> -->
+                <h3 class="typing-demo">Full Stack Web Developer</h3>
+                <br>
+                <p>Welcome to my portfolio website, a space where I present my skills and<br>projects in a straightforward manner. Explore my work in web development,<br>cybersecurity etc. as I strive to share my passion for technology with you.</p>
+                <!-- <h3>And I'm a <span class="typing-demo">Full Stack Web Developer</span></h3> -->
+                <!-- <h3>And I'm a <span>Full Stack Web Developer</span></h3> -->
             </div>
-            <div class="devpic"><img src="dev1.png" alt="Sahitya Singh"></div>
-           </div>
+            <a href="images/Final_Resume.pdf" download class="btn btn2">Download CV</a>
+            <a href="#contact" class="btn btn2">Contact Me</a>
+       
         </div>
     </div>
+    <!-- -------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic3.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, expedita ducimus? Deleniti, alias non animi sed architecto placeat aperiam hic nobis blanditiis et itaque error porro omnis? Est, dicta ad! Lorem ipsum dolor sit amet consectetur, adipisicing elit. In alias qui eveniet perferendis dolorum sequi inventore voluptate ratione nihil quae dolore, consequatur possimus. Dicta minus molestiae eos porro veritatis saepe? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem optio qui, reiciendis, blanditiis magnam numquam sed ut ex ducimus et placeat! Voluptatibus, fugit. Quis similique nam deleniti illo vitae iusto.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Web Developement</span><br>Proficient in creating websites with a focus on user experience and modern design principles.</li>
+                            <li><span>Ethical Hacking and Cybersecurity</span><br>Knowledgeable in cybersecurity practices and ethical hacking techniques to protect digital assets.</li>
+                            <li><span>Python Projects</span><br>Experience in developing various projects using Python.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2023 - Current</span><br>Full Stack Web Developement Teaching Assistant at EdYoda</li>
+                            <li><span>July 2023 - Current</span><br>Marketing And Promotions Intern at Bolt Iot</li>
+                            <li><span>March 2023 - July 2023</span><br>Content Creator at GRADplus</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Current</span><br>B.E. in Computer Science with M.S. in Mathematics from BITS Pilani </li>
+                            <li><span>2022</span><br>Class 12th from Vidya Jyoti School, Jagdalpur</li>
+                            <li><span>2020</span><br>Class 10th from Vidya Jyoti School, Jagdalpur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    ---------------services--------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i  class="fas fa-code"></i>
+                    <h2>Web Developement</h2>
+                    <p>Bringing digital ideas to life through responsive and visually appealing websites. I specialize in crafting user-friendly online experiences, from simple landing pages to complex e-commerce platforms. Whether you need a new website, a redesign, or ongoing maintenance, I'm here to transform your vision into a compelling online presence.</p>
+                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-d3771129-80eb-48c5-8510-2f4d2f869107.pdf">Click for Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Cybersecurity</h2>
+                    <p>Protecting your digital assets is paramount in today's interconnected world. My cybersecurity services are designed to safeguard your business or personal data from online threats. Whether you're seeking vulnerability assessments or penetration testing, I'm dedicated to fortifying your digital defenses. </p>
+                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-4beaed99-7cc3-4430-8cc0-7283155e0035.pdf">Click for Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Projects</h2>
+                    <p>Harnessing the power of Python to solve real-world problems and streamline processes. I offer a range of Python-based solutions, from automation scripts to data analysis tools. Whether you're looking to optimize workflows, extract insights from data, or create custom software, my Python expertise can bring your projects to life efficiently and effectively.</p>
+                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-d3771129-80eb-48c5-8510-2f4d2f869107.pdf">Click for Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ecom_site.png" >
+                    <div class="layer">
+                        <h3>Django Marketplace</h3>
+                        <p>An e-commerce website which provides an immersive online shopping
+                            experience, enabling businesses to showcase and sell their products to
+                            a wide customer base. This site offers seamless navigation and a robust
+                            product management system.</p>
+                        <a href="http://3.24.213.76/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Blogging Website</h3>
+                        <p>Built a dynamic and user-friendly blogging website that provides a
+                            platform for users to create, publish and share their thoughts and ideas
+                            through engaging blog posts.</p>
+                        <a href="https://github.com/SinghSahitya/Blog_Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Portfolio Site</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet dolorum excepturi quisquam voluptates dolore, labore, ipsum natus consequatur earum voluptatem recusandae asperiores sint tempore reprehenderit maiores modi alias accusantium!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+
+<!-- -----------------contact-------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> sahityasingh1211@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91-9685550992</p>
+                <div class="social-icons">
+                    <a href="https://github.com/SinghSahitya"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/Sahitya21410472"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/sahityasingh_1211/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sahitya-singh-044267249/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span   id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fas fa-heart"></i> Copyright © 2023 by Sahitya</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx2ZafOYytlFibIDZLvbHOjEFri0LpH_LLuUXGDkjSFlN7So_iM5o2cRTFu-h28_vaK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
