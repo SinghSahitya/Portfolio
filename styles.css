@@ -440,7 +440,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url();
+        background-image: url(images/mob_bg.jpg);
     }
     .header-text{
         margin-top: 100%;
@@ -506,6 +506,31 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
+
+     
+  .typing-demo {
+    width: 24ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 25px;
+    color: #ff004f;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
 }
 
 
